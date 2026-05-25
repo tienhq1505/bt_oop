@@ -6,8 +6,10 @@ public class thisinh {
     protected String diachi;
     protected int utien;
 
-    public thisinh(){}
-    public thisinh(int sbd, String name, String diachi, int utien){
+    public thisinh() {
+    }
+
+    public thisinh(int sbd, String name, String diachi, int utien) {
         this.sbd = sbd;
         this.name = name;
         this.diachi = diachi;
@@ -46,10 +48,11 @@ public class thisinh {
     public void setUtien(int utien) {
         this.utien = utien;
     }
-    public void hienthi(){
-        System.out.println("sbd"+sbd);
-        System.out.println("name"+name);
-        System.out.println("diachi"+diachi);
-        System.out.println("utien"+utien);
+
+    public void hienthi() {
+        System.out.println("sbd" + sbd);
+        System.out.println("name" + name);
+        System.out.println("diachi" + diachi);
+        System.out.println("utien" + utien);
     }
 }
