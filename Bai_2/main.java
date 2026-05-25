@@ -9,7 +9,7 @@ public class main {
         while (true) {
             System.out.println();
         }
-    while (true) {
+        while (true) {
             System.out.println("1. Thêm mới tài liệu");
             System.out.println("2. Xóa tài liệu theo mã tài liệu");
             System.out.println("3. Hiển thị thông tin tài liệu");
@@ -34,7 +34,7 @@ public class main {
                         String tentacgia = sc.nextLine();
                         System.out.print("Nhập số trang: ");
                         int sotrang = Integer.parseInt(sc.nextLine());
-                        ql.themthuvien(new Sach(matailieu, tennhaxuatban, sobanphathanh, tentacgia,sotrang));
+                        ql.themthuvien(new Sach(matailieu, tennhaxuatban, sobanphathanh, tentacgia, sotrang));
                     } else if (loai == 2) {
                         System.out.print("Nhập số phát hành: ");
                         int sophathanh = Integer.parseInt(sc.nextLine());
@@ -54,7 +54,7 @@ public class main {
                 case 2:
                     System.out.print("Nhập mã tài liệu cần xóa: ");
                     int matailieu = Integer.parseInt(sc.nextLine());
-                    ql.deleteSach(matailieu);
+                    ql.deleteSach(matailieuxoa);
                     break;
                 case 3:
                     ql.hienthi();
@@ -77,8 +77,9 @@ public class main {
                 case 5:
                     System.exit(0);
                 default:
-                    System.out.println("Lựa chọn không hợp lệ");    
+                    System.out.println("Lựa chọn không hợp lệ");
+            }
         }
-    }
 
-}}
+    }
+}
