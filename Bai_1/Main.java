@@ -55,7 +55,8 @@ public class Main {
                     qlcb.hienthi();
                     break;
                 case 4:
-                    System.exit(0);
+                    System.out.println("Thoát chương trình");
+                    break;
                 default:
                     System.out.println("Lựa chọn không hợp lệ");
                     break;
