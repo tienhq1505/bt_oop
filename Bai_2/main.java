@@ -7,9 +7,6 @@ public class main {
         Scanner sc = new Scanner(System.in);
         Qlthuvien ql = new Qlthuvien();
         while (true) {
-            System.out.println();
-        }
-        while (true) {
             System.out.println("1. Thêm mới tài liệu");
             System.out.println("2. Xóa tài liệu theo mã tài liệu");
             System.out.println("3. Hiển thị thông tin tài liệu");
@@ -51,11 +48,12 @@ public class main {
                     }
                     System.out.println("Thêm mới thành công");
                     break;
-                case 2:
+                case 2: {
                     System.out.print("Nhập mã tài liệu cần xóa: ");
-                    int matailieu = Integer.parseInt(sc.nextLine());
+                    int matailieuxoa = Integer.parseInt(sc.nextLine());
                     ql.deleteSach(matailieuxoa);
                     break;
+                }
                 case 3:
                     ql.hienthi();
                     break;
@@ -76,8 +74,10 @@ public class main {
                     break;
                 case 5:
                     System.exit(0);
+                    break;
                 default:
                     System.out.println("Lựa chọn không hợp lệ");
+                    break;
             }
         }
 
