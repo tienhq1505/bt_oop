@@ -104,7 +104,7 @@ public abstract class Student {
             }
         } while (sex != 1 && sex != 2);
 
-        String[] validPrefixes = { "09", "08", "03", "07", "05" };
+        String[] validPrefixes = { "090", "098", "091", "031", "035 ", "038" };
 
         do {
             System.out.print("Phone number: ");
