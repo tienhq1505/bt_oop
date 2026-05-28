@@ -30,7 +30,7 @@ public class GoodStudent extends Student {
         this.bestRewardName = bestRewardName;
     }
 
-    public void inputNormalStudent() {
+    public void inputGoodStudent() {
 
         input();
         Scanner sc = new Scanner(System.in);
