@@ -71,4 +71,11 @@ public class StudentManagement {
         return result;
     }
 
+    public void sortAndDisplay() {
+        students.sort(Comparator.comparing(Student::getFullName).reversed().thenComparing(Student::getPhoneNumber));
+        for (Student s : students) {
+            System.out.println("Full Name: " + s.getFullName());
+            System.out.println("Phone Number: " + s.getPhoneNumber());
+        }
+    }
 }
