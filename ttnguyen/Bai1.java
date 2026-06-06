@@ -9,7 +9,7 @@ public class Bai1 {
         int n = sc.nextInt();
         int[] arr = new int[n];
 
-        System.out.println("Nhập các phần tử của mảng:");
+        System.out.println("Nhập các phần tử của mảng là : ");
         for (int i = 0; i < n; i++) {
             System.out.print("arr[" + i + "] = ");
             arr[i] = sc.nextInt();
@@ -24,6 +24,15 @@ public class Bai1 {
         for (int x : arr) {
             sum += x;
         }
+
+        int min = arr[0];
+        int viTri = 0;
+        for (int i = 1; i < n; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+                viTri = i;
+            }
+        }
         System.out.println("\nTổng các phần tử = " + sum);
         System.out.print("Các phần tử lẻ trong mảng: ");
         boolean le = false;
@@ -36,16 +45,6 @@ public class Bai1 {
         if (le = false) {
             System.out.print("Không có phần tử lẻ");
         }
-
-        int min = arr[0];
-        int viTri = 0;
-        for (int i = 1; i < n; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-                viTri = i;
-            }
-        }
-
         System.out.println("\nPhần tử nhỏ nhất: " + min);
         System.out.println("Vị trí của phần tử nhỏ nhất: " + viTri);
 
